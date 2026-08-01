@@ -1,0 +1,9 @@
+2026-08-01 17:55:47,549 INFO    agent: Found 5 pending line item(s) across 2 order(s).
+2026-08-01 17:55:47,550 INFO    agent: DRY RUN - no browser will be opened, no live platform action taken.
+2026-08-01 17:55:47,580 INFO    agent.excel_io: Row 2 (404-1234567-1234567 / USB-C Cable 1m) -> Placed
+2026-08-01 17:55:47,588 INFO    agent.excel_io: Row 3 (404-1234567-1234567 / Wireless Mouse) -> Placed
+2026-08-01 17:55:47,596 INFO    agent.excel_io: Row 4 (404-1234567-1234567 / Laptop Sleeve 14in) -> Out of Window
+2026-08-01 17:55:56,359 INFO    agent.excel_io: Row 5 (OD4345678901234560 / Bluetooth Headphones) -> Placed
+2026-08-01 17:55:56,367 INFO    agent.excel_io: Row 6 (OD4345678901234560 / Phone Case - Black) -> Placed
+2026-08-01 17:56:04,325 INFO    agent: Run complete: 5 line item(s) processed.
+2026-08-01 17:56:15,739 INFO    agent: No pending tasks found (Task Status = 'To Do' / 'Pending'). Nothing to do.

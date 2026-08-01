@@ -1,0 +1,34 @@
+# Return automation agent config
+
+excel:
+  path: "data/returns_tasks.xlsx"
+  sheet: "Tasks"
+
+run:
+  dry_run: false
+  max_tasks_per_run: 0      # 0 = no limit
+  log_file: "logs/agent.log"
+  screenshot_dir: "logs/screenshots"
+
+browser:
+  channel: "chrome"
+  headless: false           # visible window on purpose, see README (bot-avoidance)
+  user_data_dir: ".browser_profile"   # persists login/cookies across runs
+
+pacing:
+  between_actions: [1.5, 4.0]   # seconds, randomised min/max
+  between_tasks: [4.0, 9.0]
+  typing_delay_ms: [60, 160]     # per keystroke
+
+platforms:
+  amazon:
+    base_url: "https://www.amazon.in"
+    flow: "auto"           # auto | batch | sequential
+  flipkart:
+    base_url: "https://www.flipkart.com"
+    login_phone: "9205359199"
+    flow: "sequential"     # spec: Flipkart is sequential-only
+
+defaults:
+  return_reason: "Bought by mistake"
+  refund_preference: "Original payment method"
